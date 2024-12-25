@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Game Reviews</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap" rel="stylesheet">
+
+    <!-- START BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- END BOOTSTRAP -->
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- START MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- END MAIN CSS -->
+</head>
+
+<body>
+    <header id="header">
+    </header>
+
+    <nav id="nav" class="navbar sticky-top navbar1 container rounded-4 navbar-expand-lg bg-body-tertiary mb-5">
+        <div class="container">
+            <img src="./images/logo-sm.png" style="width: 50px;" alt="logo">
+            <a class="navbar-brand text-white" href="#">GAME REVIEWS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a onclick='ui.showGames("mmorpg")' id="mmorpg" class="nav-link active" aria-current="page" href="#">MMORPG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick='ui.showGames("shooter")' id="shooter" class="nav-link" href="#">SHOOTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick='ui.showGames("sailing")' id="sailing" class="nav-link" href="#">SAILING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick='ui.showGames("permadeath")' id="permadeath" class="nav-link" href="#">PERMADEATH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick='ui.showGames("superhero")' id="superhero" class="nav-link" href="#">SUPERHERO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick='ui.showGames("pixel")' id="pixel" class="nav-link" href="#">PIXEL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="list" class="gameList">
+        <div class="container-fluid container-md">
+            <div id="gameList" class="row ms-5 ms-xl-0 g-4">
+            </div>
+        </div>
+    </section>
+
+    <section id="gameDetails" class="gameDetails container pt-5">
+    </section>
+
+    <section id="load" class="load vh-100 w-100">
+        <div class="loader"></div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

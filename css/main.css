@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    color: #17A2B8;
+    background-color: #272B30;
+    font-family: "Nerko One",serif;
+    display: unset;
+
+}
+header{
+    background-image: linear-gradient(rgba(39, 43, 48, 0.3), rgba(39, 43, 48, 0.3)), url(../images/wraper.png);
+   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    
+}
+.navbar1{
+background-color: #3A497B !important;
+width:75%;
+box-shadow: 0 2px 7px rgb(0, 0, 0);
+
+top:0;
+overflow: hidden;
+
+
+}
+.navbar1 .navbar-brand{
+font-size: 28px;
+font-weight: 500;
+
+}
+.navbar1 ul li a{
+    color: white !important;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px ;
+    font-weight: 400 ;
+    
+}
+
+section{
+    width:100%;
+    height: 1000px;
+
+}
+.gameList .card1{
+    background-color: #272B30;
+    width: 19rem;
+    height:23rem;
+    transition: all 0.3s ease-in-out;
+}
+.gameList .card1 .price{
+    background-color: #4A6792;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.gameList .img-cover {
+    width: 100%;
+    height: 92%;
+    background-color: rgba(39, 43, 48, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+
+}
+.gameList .card1:hover .img-cover{
+    opacity:0;
+}
+.gameList .card1:hover .price{
+    background-color: #0D6EFD;
+    transition: all 0.3s ease-in-out;
+}
+.gameList .card1:hover{
+    
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.gameList .cover{
+    width: fit-content;
+    height: fit-content;
+    
+    position: relative;
+}
+.gameList .name{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.gameList p{
+    font-family: "Comfortaa", cursive !important;
+    font-size: 14px;
+    font-weight: 400;
+}
+.gameList .footer1 h5{
+    font-family: "Comfortaa", cursive;
+    font-size: 10px ;
+    font-weight: 700;
+}
+
+
+.gameDetails{
+    color: white;
+    font-weight: 300;
+    font-family: "Comfortaa";
+}
+.gameDetails h3{
+    
+    font-weight: 100;
+}
+.gameDetails h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.gameDetails .disc{
+    font-size: 20px;
+    font-weight: 500;
+}
+.gameDetails a:hover{
+    background-color: #FFC107;
+    transition: all 0.3s ease-in-out;
+}
+.gameDetails i:hover{
+    cursor: pointer;
+}
+.load {
+    position: relative;
+}
+.load .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top:40%;
+    left: 45%;
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
